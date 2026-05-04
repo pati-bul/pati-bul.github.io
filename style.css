@@ -56,15 +56,22 @@ body {
 /* Slides */
 .slide {
   position: fixed; inset: 0;
-  display: none; align-items: center; justify-content: center;
+  display: none;
   padding: 40px;
+  overflow-y: auto;
+  overflow-x: hidden;
   animation: fadeIn 0.5s ease;
 }
-.slide.active { display: flex; }
+.slide.active { display: block; }
 @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
 
 .slide-inner {
   max-width: 1000px; width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 /* Slide Label */
@@ -309,15 +316,22 @@ h2 { font-size: clamp(26px, 4vw, 44px); font-weight: 800; line-height: 1.2; marg
 /* Mobile */
 @media (max-width: 768px) {
   .slide { padding: 24px 16px 100px; }
-  h2 { font-size: 24px; margin-bottom: 24px; }
-  .stats-row, .solution-grid, .biz-grid, .gtm-grid { grid-template-columns: 1fr; }
-  .arch-flow { flex-direction: column; }
-  .arch-arrow { transform: rotate(90deg); }
-  .market-circles { min-height: auto; gap: 16px; }
-  .circle, .circle.tam, .circle.sam, .circle.som { width: 140px; height: 140px; padding: 10px; }
-  .c-val { font-size: 20px; }
-  .hero-stats { gap: 20px; }
+  h2 { font-size: 22px; margin-bottom: 20px; }
+  .stats-row, .solution-grid, .biz-grid, .gtm-grid { grid-template-columns: 1fr; gap: 12px; margin-bottom: 20px; }
+  .stat-card, .sol-card, .biz-card, .gtm-card, .arch-node { padding: 16px; }
+  .arch-flow { flex-direction: column; gap: 8px; margin-bottom: 20px; }
+  .arch-arrow { transform: rotate(90deg); margin: -4px 0; }
+  .market-circles { min-height: auto; gap: 12px; margin-bottom: 20px; }
+  .circle, .circle.tam, .circle.sam, .circle.som { width: 120px; height: 120px; padding: 10px; }
+  .c-val { font-size: 18px; }
+  .c-lbl { font-size: 11px; }
+  .hero-stats { gap: 16px; margin-top: 32px; }
+  .hero-stat .num { font-size: 24px; }
   .comp-table { font-size: 12px; }
   .comp-table th, .comp-table td { padding: 10px 8px; }
-  #slide-nav { bottom: 16px; }
+  #slide-nav { bottom: 16px; padding: 6px 16px; }
+  .timeline { padding-left: 24px; }
+  .tl-item { margin-bottom: 20px; }
+  .ask-breakdown { margin-bottom: 24px; }
+  .ask-bar { height: 20px; }
 }
