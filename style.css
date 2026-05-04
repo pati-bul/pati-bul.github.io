@@ -62,16 +62,16 @@ body {
   overflow-x: hidden;
   animation: fadeIn 0.5s ease;
 }
-.slide.active { display: block; }
+.slide.active { 
+  display: flex; 
+  flex-direction: column; 
+}
 @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
 
 .slide-inner {
   max-width: 1000px; width: 100%;
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 0 auto;
+  margin: auto;
+  flex-shrink: 0;
 }
 
 /* Slide Label */
