@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>PatiBul — Yatırımcı Sunumu</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- Progress Bar -->
+<div id="progress-bar"><div id="progress-fill"></div></div>
+
+<!-- Navigation -->
+<nav id="slide-nav">
+  <button id="prev-btn" onclick="changeSlide(-1)">‹</button>
+  <span id="slide-counter">1 / 10</span>
+  <button id="next-btn" onclick="changeSlide(1)">›</button>
+</nav>
+
+<!-- SLIDE 1: Title -->
+<section class="slide active" data-slide="0">
+  <div class="slide-inner title-slide">
+    <div class="paw-bg-icon">🐾</div>
+    <div class="badge">Türkiye'nin En Kapsamlı GPS Takip Cihazı</div>
+    <h1 class="hero-title">Pati<span class="accent">Bul</span></h1>
+    <p class="hero-sub">Can dostunuz kaybolduğunda saniyeler önemlidir.<br/>Sınırsız menzil, gerçek zamanlı takip.</p>
+    <div class="hero-stats">
+      <div class="hero-stat"><span class="num">30sn</span><span class="lbl">Canlı Konum</span></div>
+      <div class="hero-stat"><span class="num">PWA</span><span class="lbl">Hızlı Kurulum</span></div>
+      <div class="hero-stat"><span class="num">Türkiye</span><span class="lbl">Her Yerden Çeker</span></div>
+    </div>
+    <div class="scroll-hint">Sonraki → veya ← tuşlarını kullanın</div>
+  </div>
+</section>
+
+<!-- SLIDE 2: Problem -->
+<section class="slide" data-slide="1">
+  <div class="slide-inner">
+    <span class="slide-label">01 — Problem</span>
+    <h2>Bugün Hayvanları Nasıl Kaybediyoruz?</h2>
+    <div class="stats-row">
+      <div class="stat-card red">
+        <div class="stat-icon">🐕</div>
+        <div class="stat-num">%20</div>
+        <div class="stat-desc">Kaybolan evcil hayvanların evine dönme şansı</div>
+      </div>
+      <div class="stat-card red">
+        <div class="stat-icon">💸</div>
+        <div class="stat-num">Pahalı</div>
+        <div class="stat-desc">Mevcut cihazların yüksek fiyatı ve gizli abonelikleri</div>
+      </div>
+      <div class="stat-card red">
+        <div class="stat-icon">📡</div>
+        <div class="stat-num">30m</div>
+        <div class="stat-desc">Bluetooth temelli cihazların maksimum menzili</div>
+      </div>
+    </div>
+    <div class="pain-points">
+      <div class="pain">📍 AirTag gibi cihazlar sadece başka telefonlara yakınken çalışır. Ormanda işe yaramaz.</div>
+      <div class="pain">🔋 Standart GPS tasmaların şarjı hemen biter, cihaz çok hantal kalır.</div>
+      <div class="pain">💰 İnsanlar yüksek cihaz fiyatına ek olarak her ay euro bazlı abonelik ödemek istemiyor.</div>
+    </div>
+  </div>
+</section>
+
+<!-- SLIDE 3: Solution -->
+<section class="slide" data-slide="2">
+  <div class="slide-inner">
+    <span class="slide-label">02 — Çözüm</span>
+    <h2>PatiBul: Şehirde, Ormanda,<br/><span class="accent">Her Yerde Sınırsız Takip</span></h2>
+    <div class="solution-grid">
+      <div class="sol-card">
+        <div class="sol-icon">🌍</div>
+        <h3>Mesafe Sınırı Yok</h3>
+        <p>Doğrudan hücresel (GSM/GPRS) ağ üzerinden bağlantı kurar. Köpeğiniz başka bir şehre gitse bile bulursunuz.</p>
+      </div>
+      <div class="sol-card">
+        <div class="sol-icon">⚡</div>
+        <h3>Saniye Saniye Canlı</h3>
+        <p>Bir haritaya bakıp 5 dakika önceki konumu görmek istemezsiniz. 30 saniyede bir yeni konum anında ekrana düşer.</p>
+      </div>
+      <div class="sol-card">
+        <div class="sol-icon">💰</div>
+        <h3>Zorunlu Abonelik Yok</h3>
+        <p>Temel harita takibi her zaman ücretsizdir. Rakiplerdeki gibi yüksek ücretli zorunlu paketler yerine, sadece ekstra güvenlik özellikleri için isteğe bağlı uygun fiyatlı bir abonelik sunuyoruz.</p>
+      </div>
+      <div class="sol-card">
+        <div class="sol-icon">📱</div>
+        <h3>Uygulama İndirmek Yok</h3>
+        <p>Web tabanlı PWA altyapısı sayesinde tek tıkla ana ekranınıza eklenir, App Store onay süreçlerine takılmaz.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SLIDE 4: Market -->
+<section class="slide" data-slide="3">
+  <div class="slide-inner">
+    <span class="slide-label">03 — Pazar Fırsatı</span>
+    <h2>Devasa ve Büyüyen Bir Pazar</h2>
+    <div class="market-circles">
+      <div class="circle tam"><span class="c-val">$3.5B</span><span class="c-lbl">Global Pet Tech Pazarı</span></div>
+      <div class="circle sam"><span class="c-val">$280M</span><span class="c-lbl">Küresel GPS Takip Pazarı</span></div>
+      <div class="circle som"><span class="c-val">$15M</span><span class="c-lbl">Türkiye Hedef Pazarımız</span></div>
+    </div>
+    <div class="market-facts">
+      <div class="fact">📈 İnsanlar evcil hayvanları için harcama yapmaktan çekinmiyor. Sektör <strong>hızlı bir büyüme</strong> ivmesine sahip.</div>
+      <div class="fact">🐕 Türkiye'de <strong>milyonlarca</strong> sahipli evcil hayvan bulunuyor ve güvenli takip ihtiyacı her geçen gün artıyor.</div>
+      <div class="fact">🌐 Başarılı bir Türkiye operasyonunun ardından Orta Doğu ve Avrupa pazarlarına güçlü bir açılış hedefliyoruz.</div>
+    </div>
+  </div>
+</section>
+
+<!-- SLIDE 5: Product -->
+<section class="slide" data-slide="4">
+  <div class="slide-inner">
+    <span class="slide-label">04 — Ürün & Teknoloji</span>
+    <h2>Arka Planda Neler Oluyor?</h2>
+    <div class="arch-flow">
+      <div class="arch-node hw">
+        <div class="arch-icon">📡</div>
+        <h4>SIM808 Modülü</h4>
+        <p>Kendi tasarladığımız donanım, konumu alır ve veriyi fırlatır.</p>
+      </div>
+      <div class="arch-arrow">→</div>
+      <div class="arch-node cloud">
+        <div class="arch-icon">☁️</div>
+        <h4>Cloudflare Worker</h4>
+        <p>Gelen anlık pingleri yakalar, güvenlik duvarından geçirip işler.</p>
+      </div>
+      <div class="arch-arrow">→</div>
+      <div class="arch-node db">
+        <div class="arch-icon">🗄️</div>
+        <h4>Supabase</h4>
+        <p>PostgreSQL altyapısı ile milisaniyeler içinde cihazlara iletir.</p>
+      </div>
+      <div class="arch-arrow">→</div>
+      <div class="arch-node app">
+        <div class="arch-icon">📱</div>
+        <h4>PatiBul PWA</h4>
+        <p>Telefonda harita, hız ve mesafe güncellenir.</p>
+      </div>
+    </div>
+    <div class="features-mini">
+      <span class="feat">🗺️ Sokak / Uydu / Karanlık Harita</span>
+      <span class="feat">📍 Anlık Konum Değişimi</span>
+      <span class="feat">🛤️ Nereden Geçti Çizgisi</span>
+      <span class="feat">🏎️ Hız Göstergesi</span>
+      <span class="feat">📏 Aramızda Kaç Metre Var?</span>
+      <span class="feat">🧭 Google Haritalar ile Yol Tarifi</span>
+    </div>
+  </div>
+</section>
+
+<!-- SLIDE 6: Business Model -->
+<section class="slide" data-slide="5">
+  <div class="slide-inner">
+    <span class="slide-label">05 — İş Modeli</span>
+    <h2>Nasıl Para Kazanıyoruz?</h2>
+    <div class="biz-grid">
+      <div class="biz-card primary-rev">
+        <h3>🏷️ Doğrudan Cihaz Satışı</h3>
+        <div class="price">₺1999 – ₺2499</div>
+        <p>Maliyetimiz yaklaşık <strong>1000 TL</strong>. Donanım satışından net kar elde ederek nakit akışını hemen başlatıyoruz.</p>
+      </div>
+      <div class="biz-card">
+        <h3>📦 Opsiyonel Premium</h3>
+        <div class="price">₺49/ay</div>
+        <p>Uygulamayı ücretsiz sunarken, "Güvenli bölge (Geofence) aşıldı" gibi SMS bildirimleri ve 1 yıllık geçmiş rota kaydı için küçük bir ekstra paket satıyoruz.</p>
+      </div>
+      <div class="biz-card">
+        <h3>🤝 B2B Satışları</h3>
+        <div class="price">Toplu Satış</div>
+        <p>Av köpekleri, çobanlar veya çok sayıda hayvan barındıran çiftliklere özel toptan ve filo takip paneli satışı.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SLIDE 7: Roadmap -->
+<section class="slide" data-slide="6">
+  <div class="slide-inner">
+    <span class="slide-label">06 — Yol Haritası</span>
+    <h2>Neler Yaptık, Nereye Gidiyoruz?</h2>
+    <div class="timeline">
+      <div class="tl-item done">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <span class="tl-date">MVP Tamamlandı ✅</span>
+          <h4>Çalışan Bir Ürünümüz Var</h4>
+          <p>Uçtan uca harita takibi yapan, donanımı ve yazılımıyla hazır bir prototipimiz var. Masada sadece fikir değil, icraat var.</p>
+        </div>
+      </div>
+      <div class="tl-item current">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <span class="tl-date">Önümüzdeki 3 Ay 🎯</span>
+          <h4>Üretim ve Küçültme</h4>
+          <p>Donanımın PCB kart baskısı ile daha da küçültülmesi. Su geçirmez 3D kasa tasarımı ve ilk 500 kullanıcılı beta lansmanı.</p>
+        </div>
+      </div>
+      <div class="tl-item future">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <span class="tl-date">Lansman Sonrası</span>
+          <h4>Market Dominasyonu</h4>
+          <p>Trendyol, Hepsiburada gibi pazar yerlerinde agresif satış. Veteriner klinikleriyle komisyon bazlı fiziksel satış kanalı kurulumu.</p>
+        </div>
+      </div>
+      <div class="tl-item future">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <span class="tl-date">Gelecek Vizyonu</span>
+          <h4>Farklı Sektörlere Açılma</h4>
+          <p>Bisiklet, motosiklet ve değerli kargo takibi için aynı altyapıyı farklı bir marka altında paketleme (White-label).</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SLIDE 8: Go-to-Market -->
+<section class="slide" data-slide="7">
+  <div class="slide-inner">
+    <span class="slide-label">07 — Pazara Giriş Stratejisi</span>
+    <h2>Kullanıcıya Nasıl Ulaşacağız?</h2>
+    <div class="gtm-grid">
+      <div class="gtm-card">
+        <div class="gtm-phase">Faz 1: Organik Dalga</div>
+        <h3>🎯 Topluluklardan Başlıyoruz</h3>
+        <ul>
+          <li>Kedi ve köpek sahiplenme platformlarındaki derneklere ücretsiz numuneler.</li>
+          <li>TikTok ve Instagram'da "Kaybolan köpeği bulma" odaklı viral kurtarma videoları.</li>
+        </ul>
+      </div>
+      <div class="gtm-card">
+        <div class="gtm-phase">Faz 2: Güven İnşası</div>
+        <h3>🏪 Uzman Tavsiyesi</h3>
+        <ul>
+          <li>Büyük şehirlerdeki elit veteriner klinikleriyle anlaşarak onlara özel standlar ve komisyon yapısı kuracağız.</li>
+          <li>Klinikten çıkan hayvan sahibine ilk elden satacağız.</li>
+        </ul>
+      </div>
+      <div class="gtm-card">
+        <div class="gtm-phase">Faz 3: Ölçeklenme</div>
+        <h3>🏛️ Dijital Agresyon</h3>
+        <ul>
+          <li>E-ticaret kanallarında anahtar kelime reklamlarıyla görünürlük.</li>
+          <li>Evcil hayvan sigortası sunan firmalarla cihaz hediye anlaşmaları.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SLIDE 9: Competition -->
+<section class="slide" data-slide="8">
+  <div class="slide-inner">
+    <span class="slide-label">08 — Rekabet Analizi</span>
+    <h2>Bizi Rakiplerden Ayıran Gücümüz</h2>
+    <div class="comp-table-wrap">
+      <table class="comp-table">
+        <thead>
+          <tr><th>Özellik</th><th>Apple AirTag</th><th>Tractive / Rakip GPS</th><th class="us">PatiBul 🐾</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Menzil Sınırı</td><td>Sadece iPhone'lara yakınken</td><td>Sınırsız (Hücresel)</td><td class="us">Sınırsız (GSM)</td></tr>
+          <tr><td>Abonelik Dayatması</td><td>Yok</td><td>Aylık 10€ - 20€ Abonelik Şart</td><td class="us">Temel Takip Ücretsiz (Kendi SIM'inle)</td></tr>
+          <tr><td>Cihaz Maliyeti</td><td>$29 (+Tasma aksesuarı)</td><td>$50 - $100</td><td class="us">~1000 TL</td></tr>
+          <tr><td>Anlık Güncelleme</td><td>Rastgele (Dakikalar sürer)</td><td>Batarya koruması için 2-5 dk</td><td class="us">30 Saniyede Bir Garantili</td></tr>
+          <tr><td>Kapalı Sistem</td><td>Sadece iOS Ekosistemi</td><td>Zorunlu uygulamasını kurmalısın</td><td class="us">Tarayıcıdan direkt açılır (PWA)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="unfair">🔑 <strong>Bizi Öne Çıkaran Gücümüz:</strong> Tamamen kendi geliştirdiğimiz yazılım ve donanım altyapısı sayesinde yurt dışı lisans ve sunucu maliyetlerine bağımlı değiliz. Yerel pazara en uygun fiyatlı ve en esnek çözümü sunuyoruz.</div>
+  </div>
+</section>
+
+<!-- SLIDE 10: Ask -->
+<section class="slide" data-slide="9">
+  <div class="slide-inner title-slide">
+    <span class="slide-label">09 — Yatırım Talebi</span>
+    <h2>Seed Round: <span class="accent">₺5.000.000</span></h2>
+    <p style="margin-bottom: 24px; color: var(--text2);">Bu yatırımla 18 ay boyunca nakit akışını pozitifte tutarak 10.000 aktif kullanıcıya ulaşmayı hedefliyoruz.</p>
+    <div class="ask-breakdown">
+      <div class="ask-item">
+        <div class="ask-bar" style="--w:40%"></div>
+        <span class="ask-label">%40 — Seri Üretim ve Enjeksiyon Kalıp Maliyetleri</span>
+      </div>
+      <div class="ask-item">
+        <div class="ask-bar" style="--w:30%"></div>
+        <span class="ask-label">%30 — Performans Pazarlaması ve Satış Kanalları</span>
+      </div>
+      <div class="ask-item">
+        <div class="ask-bar" style="--w:20%"></div>
+        <span class="ask-label">%20 — Çekirdek Ekibin Büyütülmesi (Yazılım & Donanım)</span>
+      </div>
+      <div class="ask-item">
+        <div class="ask-bar" style="--w:10%"></div>
+        <span class="ask-label">%10 — Operasyonel Giderler</span>
+      </div>
+    </div>
+    <div class="cta-section">
+      <p class="cta-text">Pazarı domine edecek gerçek ve çalışan bir ürüne yatırım yapmak için:</p>
+      <div class="contact-info">
+        <span>📧 gokalp.avci@ogr.deu.edu.tr</span>
+        <span>🌐 patibul.app</span>
+      </div>
+    </div>
+    <div class="final-paw">🐾</div>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
